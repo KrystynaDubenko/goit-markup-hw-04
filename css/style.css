@@ -1,0 +1,500 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --main-text-color: #212121;
+    --secondary-text-color:#757575;
+    --focus-color:  #2196F3;
+    --standart-color: #fff;
+    --team-bg-color: #F5F4FA; 
+    --footer-bg-color: #2F303A;
+    --footer-link-color: rgba(255, 255, 255, 0.6);
+}
+body {
+    font-family: var(--main-font);
+    color: var(--secondary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+.link {
+    text-decoration: none;
+}
+.list-all {
+    list-style: none;
+}
+.address {
+    font-style: none;
+}
+
+.visually-hidden {
+    position: absolute; !important;
+    clip: rect (1px, 1px, 1px, 1px);
+    clip: rect (1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+section {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.logo {
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--focus-color );
+    }
+.logo-dark-theme {
+    top: 2157px;
+    color: var(--standart-color);
+}
+.logo-light-theme {
+    top: 24px;
+    color:var(--main-text-color);
+    margin-right: 93px;
+}
+/*===========Header================ */
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.list {
+    display: flex;
+    align-items: center;
+}
+.header-bg {
+    background: var(--standart-color);
+}
+.header-link {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--main-text-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.navigation-item:not(:last-child) {
+    margin-right: 50px;
+}
+.secondary {
+    margin-left: 331px;
+}
+.navigation-item-secondary:not(:last-child) {
+    margin-right: 50px;
+}
+.in-touch {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.contact-link {
+    color: var(--secondary-text-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+    color:var(--focus-color );
+}
+
+.im-here:hover,
+.im-here:focus {
+    color: var(--focus-color );
+}
+.im-here:active {
+    color: var(--focus-color );
+}
+.current {
+    color: var(--focus-color );
+}
+.icon-envelope {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    align-items: center;
+    color: var(--secondary-text-color);
+}
+/*===========End Header================ */
+
+/*===========Hero================ */
+.hero-bg {
+    background: var(--footer-bg-color);
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+.hero-title {
+    margin: 0 auto;
+    max-width: 696px;
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--standart-color);
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    }
+.main-button {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--standart-color);
+    background: var(--focus-color );
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-button:hover,
+.main-button:focus {
+    background-color: var(--focus-color);
+}
+/*===========End Hero================ */
+
+/*===========About================ */
+.cont {
+    padding-top: 0px;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+}
+.about-link:not(:last-child) {
+    margin-right: 30px;
+}
+.about1 {
+    width: 100%;
+    height: 100%;
+}
+.about2 {
+    width: 100%;
+    height: 100%;
+    }
+.about3 {
+    width: 100%;
+    height: 100%;
+    }
+/*===========End About================ */
+
+/*===========Our team================ */
+.team-container {
+    display: flex;
+    align-items: center;
+}
+.team-container {
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+}
+.team-set {
+    margin-left: 30px;
+    flex-basis: calc((100% - 120px)/4);
+}
+.our-team-bg {
+    background-color: var(--team-bg-color)
+}
+.team-mate {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+}
+.team-description {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.job-position {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+.card {
+    width: 270px;
+    background: var(--standart-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.ihor {
+    width: 270px;
+    height: 260px;
+    background: url(4853.jpg);
+    border-radius: 0px;
+}
+.olha {
+    width: 270px;
+    height: 260px;
+    background: url(5844.jpg);
+    border-radius: 0px;
+}
+.nikolaj {
+    width: 270px;
+    height: 260px;
+    background: url(16166.jpg);
+    border-radius: 0px;
+}
+.michele {
+    width: 270px;
+    height: 260px;
+    background: url(2968.jpg);
+    border-radius: 0px;
+}
+/*===========End Our team================ */
+
+/*===========Work gallery================ */
+.main-set {
+    display: flex;
+    justify-content: center;
+    flex-wrap:nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.main-items {
+    margin-right: 8px;
+}
+.work-content-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+.buttom-bg {
+    background: var(--standart-color);
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+.portfolio-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color: var(--main-text-color);
+    background-color: var(--team-bg-color);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background-color: var(--focus-color );
+    color: var(--standart-color);
+}
+.works-set {
+    display: flex;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+    align-items: flex-start;
+    align-content: center;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.works-item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+}
+.work1 {
+    width: 100%;
+    height: 100%;
+    background: url(portfolio1.jpg);
+}
+.work2 {
+    width: 100%;
+    height: 100%;
+    background: url(portfolio2.jpg);
+}
+.work3 {
+    width: 100%;
+    height: 100%;
+    background: url(portfolio-1.jpg);
+}
+.work4 {
+    width: 100%;
+    height: 100%;
+    background: url(portfolio-2.jpg);
+}
+.work5 {
+    width: 100%;
+    height: 100%;
+    background: url(portfolio5.jpg);
+}
+.work6 {
+    width: 100%;
+    height: 100%;
+    background: url(111.jpg);
+}
+.work7 {
+    width: 100%;
+    height: 100%;
+    background: url(portfolio7.jpg);
+}
+.work8 {
+    width: 100%;
+    height: 100%;
+    background: url(portfolio8.jpg);
+}
+.work9 {
+    width: 100%;
+    height: 100%;
+    background: url(2910404.jpg);
+}
+
+.project-name {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color:var(--main-text-color);
+    margin-bottom: 4px;
+}
+.project-explanation {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    }
+/*===========Work gallery================ */
+
+/*===========Advantages section================ */
+.advantage {
+    padding-top: 94px;
+}
+.adv-set {
+    display: flex;
+    flex-wrap:nowrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.advantage-items {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 120px)/4);
+}
+.advantage-name {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+}
+.advantage-explanation {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+/*===========End Advantages section================ */
+
+.body-title {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    margin-bottom: 50px;
+}
+
+/*===========Footer================ */
+.footer-bg {
+    background: var(--footer-bg-color)
+}
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.addres-font {
+    font-style: normal;
+    margin-top: 20px;
+}
+.marg {
+    margin-bottom: 9px;
+}
+.physical-adress {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--standart-color);
+}
+.mail-adress {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-link-color)
+}
+.phone-number {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-link-color)
+}
+/*===========End Footer================ */
+
