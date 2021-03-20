@@ -163,7 +163,7 @@ section {
     height: 16px;
     margin-right: 10px;
     align-items: center;
-    color: var(--secondary-text-color); 
+    color:var(--secondary-text-color); 
 }
 .icon-envelope:hover,
 .icon-envelope:focus {
@@ -329,7 +329,7 @@ section {
     justify-content: space-between;
 }
 .social-link {
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
@@ -339,11 +339,16 @@ section {
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon{
-    fill: var(--focus-color);
+    fill: var(--standart-color);
 }
 .social-icon {
     width: 20px;
     height: 20px;
+    ;
+}
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--focus-color);
 }
 /*===========End Our team================ */
 
