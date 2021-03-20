@@ -133,7 +133,14 @@ section {
 .contact-link:focus {
     color:var(--focus-color );
 }
-
+.contact-link:hover .icon-envelope,
+.contact-link:focus .icon-envelope {
+    fill:  var(--focus-color);
+}
+.contact-link:hover .icon-smartphone,
+.contact-link:focus .icon-smartphone {
+    fill:  var(--focus-color);
+}
 .im-here:hover,
 .im-here:focus {
     color: var(--focus-color );
@@ -316,7 +323,28 @@ section {
     background: url(2968.jpg);
     border-radius: 0px;
 }
-
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-link {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: white;
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
+    fill: var(--focus-color);
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
 /*===========End Our team================ */
 
 /*===========Work gallery================ */
