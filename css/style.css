@@ -8,6 +8,7 @@
     --team-bg-color: #F5F4FA; 
     --footer-bg-color: #2F303A;
     --footer-link-color: rgba(255, 255, 255, 0.6);
+    --clients-logo-color: rgba(175, 177, 184, 1);
 }
 body {
     font-family: var(--main-font);
@@ -350,6 +351,45 @@ section {
 .social-link:focus {
     background-color: var(--focus-color);
 }
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.clients-title {
+    font-family: var(--main-font)
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    min-width: 700px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.clients-box {
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--clients-logo-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-logo {
+    fill: var(--clients-logo-color);
+    width: 44.27px;
+    height: 49.23px;
+}
+.clients-link:hover .clients-logo,
+.clients-link:focus .clients-logo {
+    fill: var(--focus-color);
+}
+.clients-link:hover .clients-box,
+.clients-link:focus .clients-box {
+    border-color: var(--focus-color);
+}
 /*===========End Our team================ */
 
 /*===========Work gallery================ */
@@ -562,6 +602,26 @@ section {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--footer-link-color)
+}
+.invitation {
+    color: var(--standart-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer-icons-list:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-icons-color {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-icons {
+    width: 20px;
+    height: 20px;
+    fill: var(--standart-color);
 }
 /*===========End Footer================ */
 
