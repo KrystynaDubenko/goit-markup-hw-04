@@ -112,6 +112,8 @@ section {
     color:var(--main-text-color);
     padding-top: 30px;
     padding-bottom: 30px;
+    display: flex;
+    align-items: center;
 }
 .navigation-item:not(:last-child) {
     margin-right: 50px;
@@ -153,18 +155,14 @@ section {
     color: var(--focus-color );
 }
 .icon-envelope {
-    width: 16px;
-    height: 16px;
     margin-right: 10px;
     align-items: center;
-    color: var(--secondary-text-color);
+    fill: var(--secondary-text-color);
 }
 .icon-smartphone {
-    width: 10px;
-    height: 16px;
     margin-right: 10px;
     align-items: center;
-    color:var(--secondary-text-color); 
+    fill:var(--secondary-text-color); 
 }
 .icon-envelope:hover,
 .icon-envelope:focus {
@@ -343,9 +341,7 @@ section {
     fill: var(--standart-color);
 }
 .social-icon {
-    width: 20px;
-    height: 20px;
-    ;
+    fill: var(--secondary-text-color);
 }
 .social-link:hover,
 .social-link:focus {
@@ -353,14 +349,15 @@ section {
 }
 .clients-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+}
+.clients-main-link {
+    margin-right: 30px;
 }
 .clients-title {
     font-family: var(--main-font)
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.16px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
@@ -379,8 +376,6 @@ section {
 }
 .clients-logo {
     fill: var(--clients-logo-color);
-    width: 44.27px;
-    height: 49.23px;
 }
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
@@ -440,6 +435,7 @@ section {
 .portfolio-btn:focus {
     background-color: var(--focus-color );
     color: var(--standart-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .works-set {
     display: flex;
@@ -577,15 +573,13 @@ section {
 
 /*===========Footer================ */
 .footer-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: var(--footer-bg-color)
 }
 .main-footer {
     display: flex;
-    align-items: flex-start;
-}
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    align-items: baseline;
 }
 .addres-font {
     font-style: normal;
@@ -616,10 +610,6 @@ section {
     color: var(--footer-link-color)
 }
 .invitation-footer {
-    display: block;
-    align-items: center;
-    box-sizing: border-box;
-    width: 206px;
     margin-left: 70px;
 }
 .invitation {
@@ -645,12 +635,14 @@ section {
 } 
 
 .footer-icons {
-    width: 20px;
-    height: 20px;
     fill: var(--standart-color);
 }
 .footer-icons-link:hover .footer-icons-color,
 .footer-icons-link:focus .footer-icons-color {
+    background-color: var(--focus-color);
+}
+.footer-icons-link:hover,
+.footer-icons-link:focus  {
     background-color: var(--focus-color);
 }
 /*===========End Footer================ */
