@@ -84,8 +84,6 @@ section {
 }
 /*===========Header================ */
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 }
 .header .container {
@@ -341,7 +339,8 @@ section {
     fill: var(--standart-color);
 }
 .social-icon {
-    fill: var(--secondary-text-color);
+    fill: rgba(175, 177, 184, 1);
+
 }
 .social-link:hover,
 .social-link:focus {
